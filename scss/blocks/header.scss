@@ -1,0 +1,173 @@
+header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    z-index: 3;
+    .left-col{
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        .menu-button{
+            height: 21px;
+            min-width: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            padding: 0;
+            cursor:pointer;
+            .line{
+                background: #fff;
+                width: 18px;
+                border-radius: 1px;
+                height: 3px;
+                &:before{
+                    content:'';
+                    width: 100%;
+                    height: 3px;
+                    background: #fff;
+                    border-radius: 1px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: 0.2s;
+                }
+                &:after{
+                    content:'';
+                    width: 100%;
+                    height: 3px;
+                    background: #fff;
+                    border-radius: 1px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transition: 0.2s;
+                }
+            }
+        }
+
+        .menu-button.active{
+            .line{
+                background: transparent;
+                &:before{
+                    top: 50%;
+                    transform: translateY(-50%) rotate(45deg);
+                    transition: 0.2s;
+                }
+                &:after{
+                    bottom: 50%;
+                    transform: translateY(50%) rotate(-45deg);
+                    transition: 0.2s;
+                }
+            }
+        }
+        .logo{
+            position: relative;
+            display: flex;
+            gap: 15px;
+            font-family: $bebas;
+            line-height: 1;
+            height: 35px;
+            .logo-note{
+                font-size: 38px;
+            }
+            .tm{
+                font-size: 12px;
+                margin-top: 3px;
+            }
+            .logo-note-about{
+                position: absolute;
+                opacity: 0;
+                bottom: 0;
+                right: 0;
+                font-size: 12px;
+                color:$green;
+                transition: 0.3s;
+            }
+
+            &:hover{
+                color:$red;
+                .logo-note-about{
+                    font-size: 16px;
+                    transition: 0.3s;
+                    opacity: 1;
+                    transform:translateY(20px);
+                }
+                
+            }
+        }
+    }
+    .playlist-button{
+        display: none;
+    }
+    .links-playlist{
+        display: none;
+        gap: 20px;
+        max-width: 340px;
+        overflow-x: auto;
+        .playlist-link{
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: rgba(28, 219, 184, 0.2);
+            color:#fff;
+            height: 42px;
+            padding: 0 25px;
+            border-radius: 21px;
+        }
+        .playlist-link.active{
+            @include gradient-button
+        }
+    }
+    .close-playlist{
+        display: none;
+    }
+    .right-col{
+        .profile{
+            display: flex;
+            align-items:center;
+            gap: 15px;
+            font-size: 14px;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 40px;
+            padding-right:20px;
+            background: rgba(255,255,255,0.2);
+            .profile-icon{
+                min-width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(28, 219, 184, 0.2);
+                box-shadow: 3.355px 2.179px 4.95px 0.05px rgba(0, 0, 0, 0.17);
+                i{
+                    font-size: 20px;
+                    color:$green;
+                }
+            }
+        }
+    }
+    .right-col.auth-block{
+        display: none;
+    }
+}
+header.active-playlist{
+    .playlist-button{
+        display: flex;
+    }
+    .links-playlist{
+        display: flex;
+    }
+    .close-playlist{
+        display: flex;
+        align-items: center;
+        cursor:pointer;
+    }
+    .right-col{
+        display: none!important;
+    }
+}
+
+  

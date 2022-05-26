@@ -1,0 +1,88 @@
+input[type="range"] {
+    -webkit-appearance: none;
+    // margin-right: -10px;
+    height: 2px;
+    background: #767a7c;
+    border-radius: 5px;
+    background-image: linear-gradient(#fff, #fff);
+    background-size: 48% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+  .select2-container{
+    width: 100%!important;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0.651px 1.891px 7.76px 0.24px rgba(28, 28, 28, 0.07);
+  }
+
+
+  .select2-container--default .select2-selection--single{
+    height: 50px;
+    border: unset;
+    border-radius: 25px;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 14px;
+    color:#131313;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 50px;
+    width: 50px;
+    background: url(../img/popup/drop.png);
+    background-position: center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    b{
+      display: none;
+    };
+  }
+
+  .select2-container--default .select2-results>.select2-results__options{
+    background: #f4f4f4;
+  }
+  .select2-container--default .select2-results__option--disabled,
+  .select2-results__option--selectable{
+    padding-left: 30px;
+    padding-right: 30px;
+    color:#666666;
+    font-size: 13px;
+  }
+  .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+    color:#4c5856;
+    background: #cdefe9;
+  }
+
+  .select2-dropdown{
+    border: unset;
+    border-bottom-right-radius:25px;
+    border-bottom-left-radius:25px;
+    overflow: hidden;
+  }
+  .select2-container{
+    background: unset;
+    margin-bottom: 15px;
+    display: block;
+  }

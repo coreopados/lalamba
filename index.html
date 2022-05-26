@@ -1,0 +1,877 @@
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Verstka</title>
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="menu-bg"></div>
+
+    <img class="song-img" src="img/img.png" alt="">
+
+    <div class="container">
+
+      <header>
+        <div class="left-col">
+          <button class="menu-button">
+            <span class="line"></span>
+          </button>
+
+          <a href="#" class="logo">
+            <span class="logo-note">
+              L A L A M B A
+            </span>
+            <span class="tm">
+              TM
+            </span>
+            <span class="logo-note-about">
+              About us
+            </span>
+          </a>
+        </div>
+
+
+        <button class="playlist-button">
+          <img src="img/playlist-icon.png" alt="">
+          MY PLAYLIST
+        </button>
+        <!-- <div class="links-playlist">
+          <button class="playlist-link active">Top 50 New</button>
+          <button class="playlist-link ">Top 50 Popular</button>
+        </div> -->
+
+        <a class="close-playlist">
+          <img src="img/playlist/close.png" alt="">
+        </a>
+
+        <div class="right-col">
+          <div class="profile">
+            <a href="#" class="profile-icon">
+              <img src="img/profile-icon.png" alt="">
+            </a>
+            <a href="#" class="login-form-link">Login</a>
+            <a href="#" class="reg-form-link">Register</a>
+          </div>
+        </div>
+        <div class="right-col auth-block">
+          <div class="profile">
+            <a href="#" class="profile-icon">
+              <img src="img/profile-icon.png" alt="">
+            </a>
+            <a href="#" class="login-form-link">Vlad</a>
+            <a href="#" class="exit-lk">
+              <img src="img/exit.png" alt="">
+            </a>
+          </div>
+        </div>
+      </header>
+
+
+      <div class="wrap-main">
+        <div class="menu-wrap">
+
+          <!-- <button class="addSong">
+            <img src="img/add-song-icon.png" alt="">
+            ADD NEW TRACK
+          </button> -->
+
+          <div class="menu-filter">
+            <div class="categories accordionn-item">
+              <div class="accordion-item__name">
+                Categories
+              </div>
+
+              <div class="accordion-submenu">
+                <label class="label-item" for="categorie1">
+                  <input type="checkbox" name="category" id="categorie1">
+                  <span>New</span>
+                </label>
+                <label class="label-item" for="categorie2">
+                  <input type="checkbox" name="category" id="categorie2">
+                  <span>Popular</span>
+                </label>
+                <label class="label-item" for="categorie3">
+                  <input type="checkbox" name="category" id="categorie3">
+                  <span>My Playlist</span>
+                </label>
+              </div>
+            </div>
+            <div class="moods accordionn-item">
+              <div class="accordion-item__name">
+                Moods
+              </div>
+
+              <div class="accordion-submenu">
+                <label class="label-item" for="mood1">
+                  <input type="checkbox" name="mood" id="mood1">
+                  <span>Dance</span>
+                </label>
+                <label class="label-item" for="mood2">
+                  <input type="checkbox" name="mood" id="mood2">
+                  <span>Other</span>
+                </label>
+                <label class="label-item" for="mood3">
+                  <input type="checkbox" name="mood" id="mood3">
+                  <span>Chill</span>
+                </label>
+              </div>
+            </div>
+            <div class="ganres accordionn-item">
+              <div class="accordion-item__name">
+                Genres
+              </div>
+
+              <div class="accordion-submenu">
+                <label class="label-item" for="ganre1">
+                  <input type="checkbox" name="" id="ganre1">
+                  <span>Pop</span>
+                </label>
+                <label class="label-item" for="ganre2">
+                  <input type="checkbox" name="ganre" id="ganre2">
+                  <span>Electronic</span>
+                </label>
+                <label class="label-item" for="ganre3">
+                  <input type="checkbox" name="ganre" id="ganre3">
+                  <span>Rock</span>
+                </label>
+                <label class="label-item" for="ganre4">
+                  <input type="checkbox" name="ganre" id="ganre4">
+                  <span>RnB/HipHop</span>
+                </label>
+                <label class="label-item" for="ganre5">
+                  <input type="checkbox" name="ganre" id="ganre5">
+                  <span>Lounge</span>
+                </label>
+              </div>
+            </div>
+            <div class="languages accordionn-item">
+              <div class="accordion-item__name">
+                Languages
+              </div>
+
+              <div class="accordion-submenu">
+                <label class="label-item" for="lang1">
+                  <input type="checkbox" name="lang" id="lang1">
+                  <span>Russian</span>
+                </label>
+                <label class="label-item" for="lang2">
+                  <input type="checkbox" name="lang" id="lang2">
+                  <span>English</span>
+                </label>
+                <label class="label-item" for="lang3">
+                  <input type="checkbox" name="lang" id="lang3">
+                  <span>World</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="reset-all">
+              Reset All
+            </div>
+          </div>
+
+          <div class="mobile-block-note">
+            <p class="green-text">Играть будет то, что выбрано. Отключи то, чего НЕ хочешь слыша</p>
+            <button class="playlist-button">
+              <img src="img/playlist-icon.png" alt="">
+              MY PLAYLIST
+            </button>
+          </div>
+        </div>
+
+        <div class="main-content">
+          <div class="filter-block">
+            <span class="category cat-link current-category" data-hint="category">Popular</span>
+            <span class="category mood-link" data-hint="mood">Other</span>
+            <span class="category ganres-link" data-hint="ganres">Pop</span>
+            <span class="category lang-link" data-hint="language">English</span>
+          </div>
+
+          <div class="song-info">
+            <div class="podborka">
+              20 in New
+            </div>
+            <div class="song-wrap">
+              <span class="song-artist">Dzharahov & Markul</span>
+              <a href="" class="about-note">About artist</a>
+            </div>
+
+            <div class="song-name">Ya v Momente (krvlsXX remix)</div>
+          </div>
+
+          <div class="soc-block">
+            <a href="vk.com">
+              <i class="fab fa-vk"></i>
+            </a>
+            <a href="facebook.com">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="foot-content">
+        <p class="green-text">
+          Играть будет то, что выбрано. Отключи то, чего НЕ хочешь слышать
+        </p>
+        <div class="soc-block">
+          <a href="vk.com">
+            <i class="fab fa-vk"></i>
+          </a>
+          <a href="facebook.com">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fas fa-link"></i>
+          </a>
+        </div>
+        <div class="empty-block">
+          <a href="#" data-hint="Help" class="help">
+            ?
+          </a>
+        </div>
+        <div class="copyright">
+          © 2021 LalaLife LLC. All rights reserved.
+        </div>
+
+        <div class="playlist-wrap">
+          <button class="playlist-button">
+            <img src="img/playlist-icon.png" alt="">
+            MY PLAYLIST
+          </button>
+        </div>
+
+        <div class="buttons-wrap">
+          <div class="buttons">
+            <span data-hint="Add to Playlist" class='add-whish media-button'>
+              <img class="heart-img" src="img/buttons/heart.png" alt="">
+              <img class="repeat-img" src="img/buttons/repeat.png" alt="">
+            </span>
+            <span data-hint="Play/Pause" class='play-button media-button'>
+              <img class="play-img" src="img/buttons/play.png" alt="">
+              <!-- <img class="pause-img" src="img/buttons/play.png" alt=""> -->
+              <i class="fas fa-pause pause-img"></i>
+            </span>
+            <span data-hint="Skip" class='skip-button media-button'>
+              <img class="skip-img" src="img/buttons/skip.png" alt="">
+            </span>
+          </div>
+          <a href="#" data-hint="Help" class="help">
+            ?
+          </a>
+        </div>
+
+        <div class="volume-wrap">
+          <div class="volume-range">
+            <div class="volume-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="volume-container">
+              <input type="range" class="rangeslider rangeslider--horizontal rangeslider__fill" min="10" max="100"
+                step="1" value="50">
+            </div>
+          </div>
+
+          <div class="fullscreen">
+            <span class="link-info">
+              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 49 49"><text
+                  font-family="ProximaNova-Bold, ProximaNova" font-size="26" font-weight="bold" letter-spacing="-.743"
+                  fill="#FFF">
+                  <tspan x="22" y="33">!</tspan>
+                </text></svg>
+            </span>
+            <div class='fullscreen-button' id="enterFullScreen" onclick="openFullscreen()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="#fff"
+                  d="M9 20H5a1 1 0 0 1-1-1V15a1 1 0 0 1 2 0v3H9a1 1 0 0 1 0 2zM14 11a1 1 0 0 1-.71-1.71l5-5a1 1 0 0 1 1.41 1.41l-5 5A1 1 0 0 1 14 11z" />
+                <path fill="#fff"
+                  d="M19 10a1 1 0 0 1-1-1V6H15a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1V9A1 1 0 0 1 19 10zM5 20a1 1 0 0 1-.71-1.71l5-5a1 1 0 0 1 1.41 1.41l-5 5A1 1 0 0 1 5 20z" />
+              </svg>
+            </div>
+            <div class='fullscreen-button' id="exitFullScreen" onclick="exitFullscreen()" style="display:none">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                id="Capa_1" x="0px" y="0px" width="401.411px" height="401.411px" viewBox="0 0 401.411 401.411"
+                style="enable-background:new 0 0 401.411 401.411;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path fill="#fff"
+                      d="M214.798,194.621c0.853,0,1.709-0.11,2.551-0.337l63.846-17.107c3.402-0.91,6.06-3.566,6.97-6.97    c0.912-3.4-0.061-7.031-2.551-9.52l-16.398-16.398L396.678,16.826c3.852-3.849,3.852-10.091,0-13.938    c-3.846-3.851-10.093-3.851-13.938,0L255.276,130.351l-16.397-16.397c-2.491-2.493-6.118-3.468-9.521-2.552    c-3.4,0.91-6.061,3.567-6.971,6.97l-17.108,63.842c-0.912,3.4,0.06,7.03,2.551,9.521    C209.702,193.608,212.218,194.621,214.798,194.621z" />
+                    <path fill="#fff"
+                      d="M269.214,257.118l16.396-16.396c2.491-2.488,3.463-6.12,2.551-9.521c-0.909-3.399-3.566-6.06-6.97-6.969l-63.84-17.11    c-3.389-0.914-7.026,0.057-9.521,2.551c-2.49,2.488-3.463,6.117-2.551,9.521l17.104,63.845c0.91,3.402,3.566,6.061,6.97,6.969    c0.843,0.228,1.698,0.338,2.551,0.338c2.58,0,5.098-1.014,6.97-2.889l16.4-16.399l127.46,127.466    c1.926,1.925,4.446,2.888,6.97,2.888s5.046-0.963,6.97-2.888c3.851-3.85,3.851-10.092,0-13.938L269.214,257.118z" />
+                    <path fill="#fff"
+                      d="M179.021,118.371c-0.91-3.402-3.569-6.06-6.969-6.97c-3.389-0.911-7.032,0.059-9.52,2.552l-16.398,16.397L18.67,2.888    c-3.846-3.851-10.093-3.851-13.938,0c-3.851,3.848-3.851,10.09,0,13.938l127.462,127.463l-16.397,16.398    c-2.491,2.488-3.463,6.119-2.551,9.52c0.91,3.403,3.566,6.06,6.969,6.97l63.845,17.107c0.842,0.227,1.699,0.337,2.551,0.337    c2.58,0,5.097-1.016,6.969-2.888c2.491-2.49,3.463-6.12,2.551-9.521L179.021,118.371z" />
+                    <path fill="#fff"
+                      d="M184.058,207.123l-63.84,17.11c-3.403,0.909-6.06,3.568-6.969,6.969c-0.912,3.4,0.06,7.032,2.551,9.521l16.396,16.396    L4.734,384.584c-3.85,3.848-3.85,10.09,0,13.938c1.925,1.925,4.447,2.888,6.969,2.888s5.046-0.963,6.969-2.888l127.46-127.466    l16.4,16.399c1.873,1.875,4.39,2.889,6.969,2.889c0.852,0,1.708-0.11,2.551-0.338c3.402-0.908,6.06-3.565,6.969-6.969    l17.105-63.845c0.912-3.403-0.06-7.032-2.551-9.521C191.086,207.185,187.451,206.211,184.058,207.123z" />
+                  </g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="playlists-wrap">
+
+        <div class="wrap-overflow">
+          <div class="playlist active">
+            <div class="sort-row">
+              <div class="col">№</div>
+              <div class="col"></div>
+              <div class="col active">Track</div>
+              <div class="col">Artist</div>
+              <div class="col">Mood</div>
+              <div class="col">Gerne</div>
+              <div class="col">Language</div>
+              <div class="col">Rank</div>
+              <div class="col">
+                <img src="img/playlist/shuffle.png" alt="">
+              </div>
+            </div>
+
+            <div class="songs">
+              <div class="song-row">
+                <div class="col">1</div>
+                <div class="col img-col">
+                  <img src="img/playlist/song-img.png" alt="">
+                </div>
+                <div class="col">Au Revoir (Filatov & Karas remix)</div>
+                <div class="col">Busy Reno</div>
+                <div class="col">Dance</div>
+                <div class="col">Pop</div>
+                <div class="col">English</div>
+                <div class="col">9 of 19</div>
+                <div class="col">
+                  <img src="img/playlist/remove.png" alt="">
+                </div>
+              </div>
+
+              <div class="song-row">
+                <div class="col">1</div>
+                <div class="col img-col">
+                  <img src="img/playlist/song-img.png" alt="">
+                </div>
+                <div class="col">Au Revoir (Filatov & Karas remix)</div>
+                <div class="col">Busy Reno</div>
+                <div class="col">Dance</div>
+                <div class="col">Pop</div>
+                <div class="col">English</div>
+                <div class="col">9 of 19</div>
+                <div class="col">
+                  <img src="img/playlist/remove.png" alt="">
+                </div>
+              </div>
+
+              <div class="song-row">
+                <div class="col">1</div>
+                <div class="col img-col">
+                  <img src="img/playlist/song-img.png" alt="">
+                </div>
+                <div class="col">Au Revoir (Filatov & Karas remix)</div>
+                <div class="col">Busy Reno</div>
+                <div class="col">Dance</div>
+                <div class="col">Pop</div>
+                <div class="col">English</div>
+                <div class="col">9 of 19</div>
+                <div class="col">
+                  <img src="img/playlist/remove.png" alt="">
+                </div>
+              </div>
+
+              <div class="song-row">
+                <div class="col">1</div>
+                <div class="col img-col">
+                  <img src="img/playlist/song-img.png" alt="">
+                </div>
+                <div class="col">Au Revoir (Filatov & Karas remix)</div>
+                <div class="col">Busy Reno</div>
+                <div class="col">Dance</div>
+                <div class="col">Pop</div>
+                <div class="col">English</div>
+                <div class="col">9 of 19</div>
+                <div class="col">
+                  <img src="img/playlist/remove.png" alt="">
+                </div>
+              </div>
+
+
+              <div class="song-row">
+                <div class="col">1</div>
+                <div class="col img-col">
+                  <img src="img/playlist/song-img.png" alt="">
+                </div>
+                <div class="col">Au Revoir (Filatov & Karas remix)</div>
+                <div class="col">Busy Reno</div>
+                <div class="col">Dance</div>
+                <div class="col">Pop</div>
+                <div class="col">English</div>
+                <div class="col">9 of 19</div>
+                <div class="col">
+                  <img src="img/playlist/remove.png" alt="">
+                </div>
+              </div>
+
+              <div class="song-row">
+                <div class="col">1</div>
+                <div class="col img-col">
+                  <img src="img/playlist/song-img.png" alt="">
+                </div>
+                <div class="col">Au Revoir (Filatov & Karas remix)</div>
+                <div class="col">Busy Reno</div>
+                <div class="col">Dance</div>
+                <div class="col">Pop</div>
+                <div class="col">English</div>
+                <div class="col">9 of 19</div>
+                <div class="col">
+                  <img src="img/playlist/remove.png" alt="">
+                </div>
+              </div>
+
+
+              <div class="song-row">
+                <div class="col">1</div>
+                <div class="col img-col">
+                  <img src="img/playlist/song-img.png" alt="">
+                </div>
+                <div class="col">Au Revoir (Filatov & Karas remix)</div>
+                <div class="col">Busy Reno</div>
+                <div class="col">Dance</div>
+                <div class="col">Pop</div>
+                <div class="col">English</div>
+                <div class="col">9 of 19</div>
+                <div class="col">
+                  <img src="img/playlist/remove.png" alt="">
+                </div>
+              </div>
+
+              <div class="song-row">
+                <div class="col">1</div>
+                <div class="col img-col">
+                  <img src="img/playlist/song-img.png" alt="">
+                </div>
+                <div class="col">Au Revoir (Filatov & Karas remix)</div>
+                <div class="col">Busy Reno</div>
+                <div class="col">Dance</div>
+                <div class="col">Pop</div>
+                <div class="col">English</div>
+                <div class="col">9 of 19</div>
+                <div class="col">
+                  <img src="img/playlist/remove.png" alt="">
+                </div>
+              </div>
+
+
+              <div class="song-row">
+                <div class="col">1</div>
+                <div class="col img-col">
+                  <img src="img/playlist/song-img.png" alt="">
+                </div>
+                <div class="col">Au Revoir (Filatov & Karas remix)</div>
+                <div class="col">Busy Reno</div>
+                <div class="col">Dance</div>
+                <div class="col">Pop</div>
+                <div class="col">English</div>
+                <div class="col">9 of 19</div>
+                <div class="col">
+                  <img src="img/playlist/remove.png" alt="">
+                </div>
+              </div>
+
+              <div class="song-row">
+                <div class="col">1</div>
+                <div class="col img-col">
+                  <img src="img/playlist/song-img.png" alt="">
+                </div>
+                <div class="col">Au Revoir (Filatov & Karas remix)</div>
+                <div class="col">Busy Reno</div>
+                <div class="col">Dance</div>
+                <div class="col">Pop</div>
+                <div class="col">English</div>
+                <div class="col">9 of 19</div>
+                <div class="col">
+                  <img src="img/playlist/remove.png" alt="">
+                </div>
+              </div>
+
+
+              <div class="song-row">
+                <div class="col">1</div>
+                <div class="col img-col">
+                  <img src="img/playlist/song-img.png" alt="">
+                </div>
+                <div class="col">Au Revoir (Filatov & Karas remix)</div>
+                <div class="col">Busy Reno</div>
+                <div class="col">Dance</div>
+                <div class="col">Pop</div>
+                <div class="col">English</div>
+                <div class="col">9 of 19</div>
+                <div class="col">
+                  <img src="img/playlist/remove.png" alt="">
+                </div>
+              </div>
+
+              <div class="song-row">
+                <div class="col">1</div>
+                <div class="col img-col">
+                  <img src="img/playlist/song-img.png" alt="">
+                </div>
+                <div class="col">Au Revoir (Filatov & Karas remix)</div>
+                <div class="col">Busy Reno</div>
+                <div class="col">Dance</div>
+                <div class="col">Pop</div>
+                <div class="col">English</div>
+                <div class="col">9 of 19</div>
+                <div class="col">
+                  <img src="img/playlist/remove.png" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="bg-form-layer">
+
+  </div>
+
+  <div class="popup-form reg-form">
+
+    <div class="close-button">
+      <img src="img/close-form.png" alt="">
+    </div>
+
+    <div class="tabs">
+      <div class="tabs__links">
+        <span class="tabs__link active">
+          Login
+        </span>
+        <span class="tabs__link">
+          Register
+        </span>
+      </div>
+      <div class="tabs__contents">
+        <div class="tabs__content active">
+          <div class="soc-block">
+            <a href="vk.com">
+              <i class="fab fa-vk"></i>
+            </a>
+            <a href="facebook.com">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+
+          <p class='center'>or use</p>
+
+
+          <form action="">
+            <div class="form-field">
+              <input type="email" placeholder="E-mail">
+            </div>
+            <div class="form-field">
+              <input type="password" placeholder="Password">
+            </div>
+            <p class="form-note">
+              Forgot password ?
+              <a href="#">Reset</a>
+            </p>
+            <button type="submit">LOGIN</button>
+          </form>
+
+
+        </div>
+        <div class="tabs__content">
+          <div class="change-role">
+            <div class="role-field">
+              <input type='radio' name='role-field' id="listener">
+              <label class="role" for='listener'>Listener</label>
+            </div>
+            <div class="role-field">
+              <input type='radio' name='role-field' id="artist">
+              <label class="role" for='artist'>Artist</label>
+            </div>
+
+          </div>
+
+          <div class="form-role-content">
+            <div class="form-content active">
+              <form action="">
+                <div class="form-field">
+                  <input type="text" placeholder="User Name">
+                </div>
+                <div class="form-field">
+                  <input type="email" placeholder="E-mail">
+                </div>
+                <div class="form-field">
+                  <input type="password" placeholder="Password">
+                </div>
+                <div class="form-field">
+                  <input type="password" placeholder="RetypePassword">
+                </div>
+                <p class="form-note">
+                  By continuing to use our services, you are agreeing to our
+                  <a href="#">Privacy policy</a>
+                </p>
+                <button type="submit">REGISTER</button>
+              </form>
+            </div>
+
+            <div class="form-content">
+              <form action="">
+                <div class="form-field">
+                  <input type="text" placeholder="User Name">
+                </div>
+                <div class="form-field">
+                  <input type="email" placeholder="E-mail">
+                </div>
+                <div class="form-field">
+                  <input type="password" placeholder="Password">
+                </div>
+                <div class="form-field">
+                  <input type="password" placeholder="RetypePassword">
+                </div>
+                <div class="form-field">
+                  <input type="text" placeholder="Artist/Group name">
+                </div>
+                <div class="form-field">
+                  <input type="text" placeholder="Short bio">
+                </div>
+                <p class="form-note">
+                  By continuing to use our services, you are agreeing to our
+                  <a href="#">Privacy policy</a>
+                </p>
+                <button type="submit">REGISTER</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-form playlist-form">
+
+    <div class="close-button">
+      <img src="img/close-form.png" alt="">
+    </div>
+
+    <div class="playlist-title">
+      <img src="img/popup/icon-playlist.png" alt="">
+      <span>MY PLAYLIST</span>
+    </div>
+
+    <form action="">
+
+      <div class="allow-wrap">
+        <input id="allow-explicit" type="checkbox" checked>
+        <label for='allow-explicit'>Allow explicit Songs</label>
+      </div>
+      <label class="form-field">
+        <span>User Name:</span>
+        <input type="text" placeholder="Name">
+        <img src="img/popup/icon-user.png" alt="">
+      </label>
+      <label class="form-field">
+        <span>User Name:</span>
+        <input type="text" placeholder="Email">
+        <img src="img/popup/icon-email.png" alt="">
+      </label>
+      <div class="change-password">
+        <h4>Change Password</h4>
+        <label class="form-field">
+          <span>Old password</span>
+          <input type="text" placeholder="Type Old Password">
+          <img src="img/popup/icon-pass.png" alt="">
+        </label>
+        <label class="form-field">
+          <span>New password</span>
+          <input type="text" placeholder="Type New Password">
+          <img src="img/popup/icon-pass.png" alt="">
+        </label>
+      </div>
+
+      <div class="buttons">
+        <button type="submit">
+          save
+        </button>
+        <button class="close-button">
+          cancel
+        </button>
+      </div>
+    </form>
+
+  </div>
+
+  <div class="popup-form about-artist">
+    <div class="close-button">
+      <img src="img/close-form.png" alt="">
+    </div>
+
+    <div class="wrap-about-artist">
+      <div class="col-left">
+        <img src="img/popup/about-info/about-img.png" alt="">
+      </div>
+      <div class="col-right">
+        <div class="artst-name">
+          Benassi Bros
+        </div>
+        <div class="artist-info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+          facilisis.
+        </div>
+        <div class="artist-link">
+          <img src="img/popup/about-info/link.png" alt="">
+          <a href="#">http://www.yazhevika.ru/</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-form add-song-form">
+    <div class="close-button">
+      <img src="img/close-form.png" alt="">
+    </div>
+
+    <form action="">
+      <button class="addSong">
+        <img src="img/add-song-icon.png" alt="">
+        ADD NEW TRACK
+      </button>
+      <div class="allow-wrap">
+        <input id="allow-explicit" type="checkbox" checked>
+      </div>
+
+      <label class="form-field">
+        <input type="text" placeholder="Track name">
+      </label>
+
+      <div class="wrap-flex">
+        Explicit:
+        <div class="wrap-check">
+          <input id="expl" type="checkbox">
+          <label for="expl">Yes</label>
+        </div>
+      </div>
+
+
+      <select class="custom-select" name="" id="">
+        <option disabled selected>Genre</option>
+        <option value="">Pop</option>
+        <option value="">Rock</option>
+        <option value="">RnB/HipHop</option>
+        <option value="">Electronic</option>
+        <option value="">Lounge</option>
+        <option value="">Retro</option>
+      </select>
+
+      <select class="custom-select" name="" id="">
+        <option value="">Mood</option>
+        <option value="">Dance</option>
+        <option value="">Other</option>
+        <option value="">Chill</option>
+      </select>
+
+      <select class="custom-select" name="" id="">
+        <option value="">Language</option>
+        <option value="">Rusian</option>
+        <option value="">English</option>
+        <option value="">World</option>
+      </select>
+
+
+      <label for="file-field" class="drop-file-wrap">
+        <div class="left-col">
+          <img src="img/popup/file-img.png" alt="">
+        </div>
+        <div class="right-col">
+          <div class="file-name">
+            Format: mp3 / Bitrate: 256+ / Size: 20MB max.
+          </div>
+          <input id="file-field" type="file">
+
+          <div class="field-search">
+            <input type="text" placeholder="Drop here or choose file">
+            <img src="img/popup/search.png" alt="">
+          </div>
+        </div>
+      </label>
+
+
+      <div class="wrap-flex">
+        Accept UA:
+        <div class="wrap-check">
+          <input id="accept" type="checkbox">
+          <label for="accept">Yes</label>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button type="submit">save</button>
+        <button class="close-button">cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
